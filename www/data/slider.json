@@ -1,0 +1,25 @@
+{
+  "resultCode": 1,
+  "resultMessage": "成功",
+  "bannerList": [{
+    "bannnerType": "1",
+    "codeID": 16,
+    "altTitle": "Jquery在异步提交方面封装的很好",
+    "imgUrl": "http://image.sycdn.ichsy.com/cfiles/staticfiles/imzoom/24df2/9c669490fa7a4567be3c0d4534535a2c.jpg"
+  }, {
+    "bannnerType": "1",
+    "codeID": 17,
+    "altTitle": "Jquery在异步提交方面封装的很好",
+    "imgUrl": "http://image.sycdn.ichsy.com/cfiles/staticfiles/imzoom/27179/7489e0c0c13948d9abfabe372ca0e0ed.jpg"
+  }, {
+    "bannnerType": "1",
+    "codeID": 15,
+    "altTitle": "Jquery在异步提交方面封装的很好",
+    "imgUrl": "http://image.sycdn.ichsy.com/cfiles/staticfiles/imzoom/27179/7489e0c0c13948d9abfabe372ca0e0ed.jpg"
+  }, {
+    "bannnerType": "1",
+    "codeID": 10,
+    "altTitle": "Jquery在异步提交方面封装的很好",
+    "imgUrl": "img/slider1.jpg"
+  }]
+}

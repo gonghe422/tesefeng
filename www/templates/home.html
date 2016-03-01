@@ -1,0 +1,114 @@
+<ion-view view-title="特色风">
+  <header class="top">
+    <div class="top_left">
+      <a href="list.html"></a>
+    </div>
+    <form class="top_middle">
+      <div class="reltive">
+        <div class="kuang_search">
+          <div class="border_pd">
+            <input type="text" />
+          </div>
+        </div>
+        <a href="#"></a>
+      </div>
+    </form>
+    <div class="top_right"></div>
+  </header>
+  <ion-content on-scroll="getScrollPosition()" scroll-watch ng-controller="SlideCtrl" lazy-scroll overflow-scroll="true">
+
+    <div class="main">
+      <!--幻灯片-->
+      <ion-slide-box ng-if="bannerList.length" on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true" slide-interval=2000 show-pager="true" pager-click="pageClick(index)" active-slide="myActiveSlide">
+        <ion-slide bindonce ng-repeat="item in bannerList" ng-cloak>
+          <div class="slider_img">
+            <a href="#">
+              <img bo-src="item.imgUrl" />
+            </a>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+
+      <!--今日特色滑动更多-->
+      <div class="day_goods">
+        <h1>今日特色（滑动更多特色）</h1>
+        <div class="day_goods_imgs">
+          <ion-slide-box show-pager="false" does-continue="true" slide-interval=1000>
+
+
+            <ion-slide bindonce ng-cloak ng-repeat="features in todayFeatures">
+              <ul>
+                <li bindonce ng-repeat="feature in features">
+                  <a href="#/tab/product_detail/2">
+                    <img bo-src="feature.imgUrl" />
+                    <h1 bo-bind="feature.name"></h1>
+                    <span bo-bind="feature.price"></span>
+                  </a>
+                </li>
+              </ul>
+            </ion-slide>
+
+          </ion-slide-box>
+
+        </div>
+      </div>
+      <div class="day_goods">
+        <h1>推荐特色（滑动更多推荐）</h1>
+        <div class="day_goods_imgs">
+          <ion-slide-box show-pager="false" does-continue="true" slide-interval=1000>
+            <ion-slide ng-cloak bindonce ng-repeat="features in todayFeatures">
+              <ul>
+                <li bindonce ng-repeat="feature in features">
+                  <a href="#/tab/product_detail/1">
+                    <img bo-src="feature.imgUrl" />
+                    <h1 bo-bind="feature.name"></h1>
+                    <span bo-bind="feature.price"></span>
+                  </a>
+                </li>
+              </ul>
+            </ion-slide>
+          </ion-slide-box>
+
+        </div>
+      </div>
+
+      <!--通用广告-->
+      <div class="common-ad">
+        <a href="#">
+          <img src="http://image.sycdn.ichsy.com/cfiles/staticfiles/imzoom/27178/8c0adcc37f054f2b8cc7667dd4ff89da.jpg" alt="" />
+        </a>
+
+      </div>
+      <!--特色-->
+      <div class="all_goods" bindonce ng-repeat="items in shandong track by $index">
+        <h1 >{{items.provinceName}} <a ng-href="#/tab/product/{{items.provinceName}}/{{items.provinceId}}" class="more">更多</a></h1>
+        <div class="all_goods_imgs">
+          <ul>
+            <li bindonce ng-repeat="subitem in items.products track by $index">
+              <a ng-href="#/tab/product_detail/{{subitem.pid}}">
+                <img image-lazy-src='{{subitem.ImgUrl}}' image-lazy-loader="ios" lazy-scroll-resize="true" />
+                <h1 bo-bind="subitem.name"></h1>
+                <p  bo-bind="subitem.desc">
+                </p>
+                <span>成本价:{{subitem.newPrice}}</span>
+                <span class="guidePrice">市场价:{{subitem.marketPrice}}</span>
+              </a>
+            </li>
+            </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- <feature  shandong='shandong'></feature> -->
+      <!-- <expander ng-repeat="item in expanders"  etitle="item.title" data='item.data'></expander> -->
+      <footer >
+        <h3>特色风</h3>
+        <p>一家汇集中国五湖四海的名吃特色</p>
+      </footer>
+    </div>
+
+  </ion-content>
+  <div id="gotop" ng-click="scrollTop()">
+  </div>
+</ion-view>

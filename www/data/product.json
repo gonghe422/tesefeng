@@ -1,0 +1,87 @@
+{
+  "resultCode": 1,
+  "resultMessage": "成功",
+  "responseObject": {
+    "productList": [{
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型1",
+      "desc": "产地：山东菏泽单县",
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型2",
+      "desc": "产地：山东菏泽单县",
+
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型3",
+      "desc": "产地：山东菏泽单县",
+
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型4",
+      "desc": "产地：山东菏泽单县",
+
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/m13.jpg",
+      "name": "云南白药牙膏180g留兰香型5",
+      "desc": "产地：山东菏泽单县",
+
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型6",
+      "desc": "产地：山东菏泽单县",
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型6",
+      "desc": "产地：山东菏泽单县",
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型6",
+      "desc": "产地：山东菏泽单县",
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型6",
+      "desc": "产地：山东菏泽单县",
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+
+    }, {
+      "codeID": "11",
+      "imgUrl": "img/1.jpg",
+      "name": "云南白药牙膏180g留兰香型6",
+      "desc": "产地：山东菏泽单县",
+      "marketPrice": "￥112",
+      "newPrice": "￥90"
+
+    }]
+  }
+
+}

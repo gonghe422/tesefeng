@@ -1,0 +1,53 @@
+<ion-view view-title="{{title}}">
+
+  
+  <back back-title="{{title}}"></back>
+
+  <ion-content overflow-scroll="true" scroll-watch lazy-scroll >
+
+    <!-- <div class="top bg_none">
+      <div class="top_left1">
+        <a href="#"></a>
+      </div>
+      <!-- <form class="top_middle">
+        <div class="reltive">
+          <div class="kuang_search">
+            <div class="border_pd">
+              <input type="text" />
+            </div>
+          </div>
+          <a href="#" class="before"></a>
+        </div>
+      </form> -->
+    <!-- <div class="top_right">
+        <a href="#"></a>
+      </div> -->
+    <!-- </div>  -->
+    <div class="content">
+
+      <div class="list_goods_news">
+        <li bindonce ng-repeat="item in productList">
+          <a href="#">
+            <div class="img_left">
+              <img image-lazy-src='{{item.imgUrl}}' image-lazy-loader="ios" lazy-scroll-resize="true" />
+
+              <!-- <img ng-src="{{item.imgUrl}}" /> -->
+            </div>
+            <font>
+              <b bo-bind="item.name"></b>
+              <em bo-bind="item.desc"></em>
+              <span>成本价:{{item.newPrice}}<i>市场价:{{item.marketPrice}}</i></span>
+            </font>
+          </a>
+        </li>
+
+      </div>
+      <footer ng-if="hasMore==false">
+        <h3>特色风</h3>
+        <p>一家汇集中国五湖四海的名吃特色</p>
+      </footer>
+    </div>
+    <ion-infinite-scroll ng-if="hasMore" distance="10%" icon="ion-loading-c" on-infinite="doMore()">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>
